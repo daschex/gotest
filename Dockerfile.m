@@ -4,7 +4,7 @@
 ### Build Stage ###
 
 # Get latest golang version
-FROM golang: latest as builder
+FROM golang:latest as builder
 
 # Make a new internal directory.
 RUN mkdir /app
