@@ -1,4 +1,4 @@
-# Build with command: docker build -t <appname> -f Dockerfile.m .
+# Build with command: docker build -t <appname> -f Dockerfile.multi .
 # Run with command: docker run -p 8080:8080 <appname>
 
 ### Build Stage ###
