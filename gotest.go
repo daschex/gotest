@@ -24,7 +24,34 @@ func init() {
 // Main function - Entrypoint of application.
 func main() {
 	fmt.Println("Application Started...\n")
-/*
+//	displayMsg()
+//	varArr()
+//	strSlice()
+
+
+
+	fmt.Println("\nApplication Terminated.\n")
+}
+
+
+
+
+// Function for playing with strings, arrays, and slices.
+func strSlice() {
+	msg := "This is a test message string."
+	//msgArr := [...]string{msg}
+	//msgSlice := []string{msg}
+	msgSplit := strings.Split(msg, "")
+	msgWord := strings.Split(msg, " ")
+
+	//fmt.Println("Array ", len(msgArr), " ", msgArr)
+	//fmt.Println("Slice ", len(msgSlice), " ", msgSlice)
+	fmt.Printf("MSG %v %T: %v\n", len(msgSplit), msgSplit, msgSplit)
+	fmt.Printf("Split by word %v: %v\n", len(msgWord), msgWord)
+}
+
+// Function for playing with variables and arrays.
+func varArr() {
 	i := 42
 	j := float64(i)
 
@@ -44,17 +71,4 @@ func main() {
 	mySlice :=[]int{3,6,9}
 	mySlice = append(mySlice, 12)
 	fmt.Printf("Slice: %v\n", mySlice)
-*/
-
-	msg := "This is a test message string."
-	//msgArr := [...]string{msg}
-	//msgSlice := []string{msg}
-	msgSplit := strings.Split(msg, "")
-
-	//fmt.Println("Array ", len(msgArr), " ", msgArr)
-	//fmt.Println("Slice ", len(msgSlice), " ", msgSlice)
-	fmt.Printf("MSG %T: %v\n", msgSplit, msgSplit)
-
-//	displayMsg()
-	fmt.Println("\nApplication Terminated.\n")
 }
